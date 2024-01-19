@@ -20,6 +20,9 @@
     box-sizing: border-box;
 }
 
-body {
+body, 
+input, 
+button {
     font-family: 'Roboto', sans-serif;
+    background: var(--gray2);
 }

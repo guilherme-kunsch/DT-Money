@@ -1,0 +1,19 @@
+.teste {
+  background: var(--gray3);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid blue;
+  padding: 1.5rem;
+}
+
+.component {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.component > p{
+  color: var(--gray5);
+  font-weight: 400;
+}

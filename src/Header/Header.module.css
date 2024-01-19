@@ -1,6 +1,5 @@
 .header {
     background: var(--gray1);
-    height: 13.25rem;
 }
 .header img {
     height: 2rem;
@@ -9,6 +8,8 @@
 .content {
     display: flex;
     justify-content: center;
+    padding: 2.5rem 10rem 7.62rem 10rem;
+
 }
 
 .title {
@@ -16,7 +17,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 2.5rem;
 }
 
 .title button {
