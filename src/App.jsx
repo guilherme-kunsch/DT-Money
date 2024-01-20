@@ -1,13 +1,14 @@
-import styles from "./App.module.css";
-import { Body } from "./Financeiro/Content";
+import styles from "./App.module.css"
+import { Content } from "./components/Financial/Content";
 import "./Global.css";
-import { Header } from "./Header/Header";
+import { Header } from "./components/Header/Header";
+import { Accounts } from "./components/Accounts/Accounts";
 export function App() {
   return (
-    <div>
+    <div className={styles.wrapper}>
       <Header />
-      <Body />
-      
+      <Content />
+      <Accounts />
     </div>
   );
 }
