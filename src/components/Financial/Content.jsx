@@ -6,7 +6,7 @@ export function Content() {
     <div className={styles.cardFinanceiro}>
       <Card name="Entrada" value={1000}/>
       <Card name="Saida" value={1500}/>
-      <Card name="Total" value={500}/>
+      <Card name="Total" value={500} />
     </div>
   )
 }

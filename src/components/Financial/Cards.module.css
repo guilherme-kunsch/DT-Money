@@ -1,6 +1,6 @@
-.teste {
+.dashboard {
   background: var(--gray3);
-  width: 100%;
+  width: 70rem;
   display: flex;
   flex-direction: column;
   padding: 1.5rem;
@@ -11,6 +11,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.dashboard:last-child {
+  background: var(--green-dark);
 }
 
 .component > p{

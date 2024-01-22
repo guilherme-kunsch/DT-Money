@@ -20,7 +20,7 @@ export function Card(prop) {
   });
 
   return (
-    <div className={styles.teste}>
+    <div className={styles.dashboard}>
       <div className={styles.component}>
         <p>{name}</p>
         {icons[name]}
