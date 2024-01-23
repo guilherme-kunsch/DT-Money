@@ -38,3 +38,8 @@
   font-size: 16px;
   cursor: pointer;
 }
+
+.source > button:hover {
+  background: var(--green-light);
+  color: white;
+}

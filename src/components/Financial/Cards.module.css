@@ -17,8 +17,8 @@
   background: var(--green-dark);
 }
 
-.component > p{
-  color: var(--gray5);
+.component > p {
+  color: white;
   font-weight: 400;
 }
 
