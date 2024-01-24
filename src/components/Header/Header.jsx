@@ -1,29 +1,19 @@
 import styles from "./Header.module.css";
 import igniteLogo from "../../assets/ignite-logo.svg";
 import { useState } from "react";
-import Modal from "react-modal";
+import Popup from "reactjs-popup";
+import { ArrowCircleUp, ArrowCircleDown, X} from "@phosphor-icons/react";
+
 
 export function Header() {
+  const [popupOpen, setPopupOpen] = useState(false);
 
-  const [modalAberto, setModalAberto] = useState(false);
-
-  const abrirModal = () => {
-    setModalAberto(true);
+  const openPopup = () => {
+    setPopupOpen(true);
   };
 
-  const fecharModal = () => {
-    setModalAberto(false);
-  };
-
-  const customStyles = {
-    content: {
-      top: "41%",
-      left: "50%",
-      width: "33.43rem",
-      transform: "translate(-50%, -50%)",
-      backgroundColor: "rgb(0, 0, 0, 0.7)",
-      zIndex: "1000"
-    },
+  const closePopup = () => {
+    setPopupOpen(false);
   };
 
   return (
@@ -34,21 +24,42 @@ export function Header() {
             <img src={igniteLogo} alt="logo ignite" />
             <p>DT Money</p>
           </div>
-          <button type="button" onClick={abrirModal}>
+          <button className={styles.transacao} type="button" onClick={openPopup}>
             Nova transação
           </button>
-
-          <Modal
-            isOpen={modalAberto}
-            onRequestClose={fecharModal}
-            contentLabel="Teste"
-            style={customStyles}
+          <Popup
+            open={popupOpen}
+            onClose={closePopup}
+            overlayStyle={{ background: "rgba(0, 0, 0, 0.6)" }}
+            contentStyle={{ top: "-240px" }}
           >
-            <p>Nova transação</p>
-            <button type="button" onClick={fecharModal}>
-              FECHAR
-            </button>
-          </Modal>
+            <div className={styles.popup}>
+              <button className={styles.iconClosePopUp} onClick={closePopup}>
+                <X size={24}/>
+              </button>
+              <div className={styles.titlePopUp}>
+                <p>Nova transação</p>
+              </div>
+              <div className={styles.inputsPopUp}>
+                <input className={styles.descricao} type="text" placeholder="Descrição" />
+                <input className={styles.preco} type="number" placeholder="Preço" />
+                <input className={styles.categoria} type="text" placeholder="Categoria" />
+              </div>
+              <div className={styles.buttonsPopUp}>
+                <button>
+                  <ArrowCircleUp size={24} />
+                  Entrada
+                </button>
+                <button>
+                  <ArrowCircleDown size={24} />
+                  Saida
+                </button>
+              </div>
+              <div className={styles.cadastrarPopUp}>
+                <button>Cadastrar</button>
+              </div>
+            </div>
+          </Popup>
         </div>
       </div>
     </div>
