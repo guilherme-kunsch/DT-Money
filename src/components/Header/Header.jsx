@@ -31,7 +31,7 @@ export function Header() {
             open={popupOpen}
             onClose={closePopup}
             overlayStyle={{ background: "rgba(0, 0, 0, 0.6)" }}
-            contentStyle={{ top: "-240px" }}
+            // contentStyle={{ top: "-140px" }}
           >
             <div className={styles.popup}>
               <button className={styles.iconClosePopUp} onClick={closePopup}>
@@ -46,13 +46,13 @@ export function Header() {
                 <input className={styles.categoria} type="text" placeholder="Categoria" />
               </div>
               <div className={styles.buttonsPopUp}>
-                <button>
-                  <ArrowCircleUp size={24} />
-                  Entrada
+                <button className={styles.arrowCircleUp}>
+                  <ArrowCircleUp size={24} color="#00875F"/>
+                  <p>Entrada</p>
                 </button>
-                <button>
-                  <ArrowCircleDown size={24} />
-                  Saida
+                <button className={styles.arrowCircleDown}>
+                  <ArrowCircleDown size={24} color="#F75A68"/>
+                  <p>Saída</p>
                 </button>
               </div>
               <div className={styles.cadastrarPopUp}>

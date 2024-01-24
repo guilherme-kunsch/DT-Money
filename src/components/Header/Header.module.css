@@ -93,7 +93,13 @@
 }
 
 .buttonsPopUp button {
+    width: 100%;
     display: flex;
     padding: 1rem 1.5rem;
     align-items: center;
+    justify-content: center;
+}
+
+.buttonsPopUp button p {
+    color: var(--gray7);
 }
