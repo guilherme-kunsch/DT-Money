@@ -48,7 +48,7 @@
 
 .popup {
     width: 33.4375rem;
-    background: var(--gray3);
+    background: var(--gray2);
     border-radius: 6px;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 7px 29px 0px;
     z-index: 1000;
@@ -79,11 +79,17 @@
 }
 
 .inputsPopUp > input {
+    background: var(--gray1);
     padding: 1rem;
     margin-bottom: 1rem;
     border: none;
     border-radius: 6px;
     align-items: center;
+    color: var(--gray8);
+}
+
+.inputsPopUp input:last-child {
+    margin-bottom: 1.5rem;
 }
 
 .buttonsPopUp  {
@@ -92,14 +98,58 @@
     gap: 1rem;
 }
 
-.buttonsPopUp button {
+.buttonsPopUp a {
     width: 100%;
+    background: var(--gray3);
     display: flex;
     padding: 1rem 1.5rem;
     align-items: center;
     justify-content: center;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    text-decoration: none;
 }
 
-.buttonsPopUp button p {
-    color: var(--gray7);
+.buttonsPopUp a:hover {
+    background: var(--gray4);
+    transition: 0.1s background;
+}
+
+.buttonsPopUp a p {
+    color: var(--gray6);
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.arrowCircleUp {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.arrowCircleDown {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.cadastrarPopUp {
+    width: 100%;
+}
+
+.cadastrarPopUp > button {
+    width: 100%;
+    background: var(--green);
+    color: var(--gray8);
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 2.5rem;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.cadastrarPopUp > button:hover {
+    background: var(--green-light);
+    transition: 0.1s background;
 }

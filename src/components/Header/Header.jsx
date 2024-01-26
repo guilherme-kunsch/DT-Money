@@ -42,18 +42,18 @@ export function Header() {
               </div>
               <div className={styles.inputsPopUp}>
                 <input className={styles.descricao} type="text" placeholder="Descrição" />
-                <input className={styles.preco} type="number" placeholder="Preço" />
+                <input className={styles.preco} type="text" placeholder="Preço" />
                 <input className={styles.categoria} type="text" placeholder="Categoria" />
               </div>
               <div className={styles.buttonsPopUp}>
-                <button className={styles.arrowCircleUp}>
-                  <ArrowCircleUp size={24} color="#00875F"/>
+                <a href="#" className={styles.arrowCircleUp}>
+                  <ArrowCircleUp size={26} color="#00875F"/>
                   <p>Entrada</p>
-                </button>
-                <button className={styles.arrowCircleDown}>
-                  <ArrowCircleDown size={24} color="#F75A68"/>
+                </a>
+                <a href="#" className={styles.arrowCircleDown}>
+                  <ArrowCircleDown size={26} color="#F75A68"/>
                   <p>Saída</p>
-                </button>
+                </a>
               </div>
               <div className={styles.cadastrarPopUp}>
                 <button>Cadastrar</button>
