@@ -19,7 +19,7 @@
 }
 
 .source > input:focus {
-  outline: 1px solid var(--gray5);
+  outline: 1px solid var(--green-light);
 }
 
 .source > input::placeholder {

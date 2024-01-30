@@ -88,6 +88,10 @@
     color: var(--gray8);
 }
 
+.inputsPopUp > input:focus {
+    outline: 1px solid var(--green-light);
+}
+
 .inputsPopUp input:last-child {
     margin-bottom: 1.5rem;
 }
